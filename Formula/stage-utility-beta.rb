@@ -11,7 +11,7 @@ class StageUtilityBeta < Formula
   # Generated from stage-utility.rb - do not edit by hand.
   desc "Stage monitors driven by Planning Center and the gear you already run"
   homepage "https://github.com/Cornerstone-Production/Stage-Utility"
-  version "1.10.0-beta.5"
+  version "1.10.0-beta.6"
   conflicts_with "stage-utility", because: "both install a stage-utility binary"
   license "GPL-3.0-or-later"
 
@@ -20,22 +20,22 @@ class StageUtilityBeta < Formula
   on_macos do
     on_arm do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-darwin-arm64.tar.gz"
-      sha256 "815b11626b16ae5ccfc15e05e96ac4ad5de1858839f9f9185dfd524c050c6ffa"
+      sha256 "eb1d8ed6f0259aa547ee920642d1ebe743bb607a1317d6d94f9d5679fdf6ae53"
     end
     on_intel do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-darwin-x64.tar.gz"
-      sha256 "b61a74d40d1082e6b1583d5d5ec2c70901e9417bd6bd57f5801b8a1eda8f716c"
+      sha256 "0d3703dd3857a3ea22464c814ba93174a6b213bfb2ac4124a175d965a7d8d653"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-linux-arm64.tar.gz"
-      sha256 "590af14e9f1c941c275322f14a88ed2a8d04cce3767387bb07b1ea93ed0e08db"
+      sha256 "9b12bbbd5418f33a0c71fc47cc0dfa86e53c4c1574a58fef3301e248d635d9d4"
     end
     on_intel do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-linux-x64.tar.gz"
-      sha256 "f18791196e5d6f7ba66e979a561b4beb7c6b14394d8dafdceb1748b84001f237"
+      sha256 "96c881766370e8c7b455023008c9af3c25b1e5375ec58334f2acea6ea0e9c2e3"
     end
   end
 
