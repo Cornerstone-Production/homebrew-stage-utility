@@ -11,31 +11,33 @@ class StageUtilityBeta < Formula
   # Generated from stage-utility.rb - do not edit by hand.
   desc "Stage monitors driven by Planning Center and the gear you already run"
   homepage "https://github.com/Cornerstone-Production/Stage-Utility"
-  version "1.27.0-beta.8"
+  version "1.27.0-beta.9"
   conflicts_with "stage-utility", because: "both install a stage-utility binary"
   license "GPL-3.0-or-later"
 
-  # Each archive already contains a Node runtime, so the formula depends on
-  # nothing and builds nothing.
+  # Each archive already contains a Node runtime, so nothing is built. ffmpeg is
+  # the system's own, which the Video relay's audio conversion needs.
+  depends_on "ffmpeg"
+
   on_macos do
     on_arm do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-darwin-arm64.tar.gz"
-      sha256 "519868130f149f8ef6a4538612a078c8e842ead7a3505c72ca8d9500836b0937"
+      sha256 "0802c136209b8c6e54c245db37feff71928fdefe2abb09b17d6fd22f782fea0e"
     end
     on_intel do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-darwin-x64.tar.gz"
-      sha256 "5efe555a1f327616d019f45cde41d86d77ab0afcfaa7932c9e35f8ab7b73b786"
+      sha256 "817572048b7f98b4e0a29e8d9dd79ef959ee516e4ba75ddd533eb8e5308563d0"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-linux-arm64.tar.gz"
-      sha256 "d4c2caf092fb16391e2dc9db078a3da6665657a4dde2455b05a4637fcb3ab91a"
+      sha256 "a6af05afa3839808019393e1cf44d82c65bd016476c86aae3a1a0a3bfe7db42a"
     end
     on_intel do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-linux-x64.tar.gz"
-      sha256 "2ed1d39662c9f9ceb3b237a7a8f00dc0b5665cf3edf5bd58fb8bf4c676527fff"
+      sha256 "82571c465baf7f138d44aef1a9f83678c744b79f5785eb9c43027b4a3be64b79"
     end
   end
 
