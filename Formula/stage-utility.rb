@@ -10,7 +10,7 @@
 class StageUtility < Formula
   desc "Stage monitors driven by Planning Center and the gear you already run"
   homepage "https://github.com/Cornerstone-Production/Stage-Utility"
-  version "1.27.0"
+  version "1.28.0"
   license "GPL-3.0-or-later"
 
   # Each archive already contains a Node runtime, so nothing is built. ffmpeg is
@@ -20,22 +20,22 @@ class StageUtility < Formula
   on_macos do
     on_arm do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-darwin-arm64.tar.gz"
-      sha256 "ed355315f80853c03e99218e713a5979d6ce60048023daaa2584c7ffa420d264"
+      sha256 "a363a837ff99982e5604925c78f48f5a65fe508c0002d35d70a1abac1c7dbc89"
     end
     on_intel do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-darwin-x64.tar.gz"
-      sha256 "a1f70de3c511726c2a70f9150305d5a5e5f173a643ce2cfa7ae73530119f12df"
+      sha256 "d8a25f8d168a5c541e42cd04c000378bd7f15f02b8b9451acf339b03f44c7453"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-linux-arm64.tar.gz"
-      sha256 "7bcd6b5429a6492bd133f9e4b3f685ec1c9692ba35d98f849007039ba9fef388"
+      sha256 "087af89275c73afae4453c3bbca6c50908e077db74d0496a4e3c989e421ff7d7"
     end
     on_intel do
       url "https://github.com/Cornerstone-Production/Stage-Utility/releases/download/v#{version}/stage-utility-#{version}-linux-x64.tar.gz"
-      sha256 "707a78876c1dbf2bdc184b9f6a1ac0c9fa6715d8d548f38fce09e1f056e484c1"
+      sha256 "6abde74e3c096137c812a2b5d451c8b283893e90e80e09b9eff5ec9867113005"
     end
   end
 
